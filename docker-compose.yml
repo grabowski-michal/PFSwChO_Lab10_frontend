@@ -4,8 +4,6 @@ services:
     stdin_open: true
     environment:
       - CHOKIDAR_USEPOLLING=true
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: michalgrabowski98/lab10:ebs_frontend
     ports:
       - "80:80"
